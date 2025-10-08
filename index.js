@@ -10,8 +10,7 @@ app.get("/", (req, res) => {
   res.send("WALLE Health Backend Running 🚀");
 });
 
-// Example endpoint for symptom tracking
-app.post("/symptoms", (req, res) => {
+app.post("/api/symptom", (req, res) => {
   const { symptoms } = req.body;
   console.log("Received Symptoms:", symptoms);
   res.json({ message: "Symptoms received successfully", symptoms });
